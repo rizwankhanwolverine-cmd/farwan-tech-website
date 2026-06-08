@@ -113,7 +113,8 @@ class ContactScreen extends StatelessWidget {
           const _InfoRow(
             icon: Icons.email_outlined,
             title: 'Email',
-            detail: 'hello@farwantechnologies.com',
+            detail:
+                'support@farwantechnologies.com or farwantechnologies@gmail.com',
           ),
           const SizedBox(height: 32),
           const _InfoRow(

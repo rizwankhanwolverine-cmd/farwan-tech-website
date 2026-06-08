@@ -1,16 +1,44 @@
 [
   {
-    "id": "health_Right_01",
-    "title": "Health Right",
-    "category": "Healthcare Management",
-    "description": "A comprehensive management system designed specifically for hospitals and clinics to streamline administration, patient management, and daily medical operations.",
+    "id": "brain_gain",
+    "title": "The Brain Gain",
+    "category": "EdTech Mobile App",
+    "description": "A scientifically designed cognitive enhancement platform. The Brain Gain gamifies learning to elevate intelligence, offering targeted interactive modules that sharpen mathematical agility and refine English language proficiency.",
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "RevenueCat"
+    ],
+    "imageUrl": "assets/images/brain_gain_mockup.png",
+    "infoUrl": "",
+    "loginUrl": "https://play.google.com/store/apps/details?id=com.yourdomain.braingain"
+  },
+  {
+    "id": "edu_engine",
+    "title": "Edu Engine",
+    "category": "School Management System",
+    "description": "A comprehensive educational ecosystem bridging the gap between institutions and families. Edi Engine provides robust school administration tools while empowering parents with a dedicated secure portal for real-time academic tracking and communication.",
     "techStack": [
       "Flutter",
       "Supabase",
       "Dart"
     ],
+    "imageUrl": "assets/images/edu_engine_mockup.png",
+    "infoUrl": "",
+    "loginUrl": ""
+  },
+  {
+    "id": "health_right",
+    "title": "Health Right",
+    "category": "Healthcare Management",
+    "description": "An enterprise-grade web portal engineered for the modern healthcare sector. Health Right streamlines complex administrative workflows, patient management, and diagnostic tracking for hospitals and advanced clinical centers.",
+    "techStack": [
+      "Flutter Web",
+      "Python",
+      "Supabase"
+    ],
     "imageUrl": "assets/images/health_right_mockup.png",
-    "infoUrl": "/products/health-right",
+    "infoUrl": "",
     "loginUrl": "https://app.healthright.yourdomain.com/login"
   }
 ]

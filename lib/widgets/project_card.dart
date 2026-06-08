@@ -44,28 +44,36 @@ class _ProjectCardState extends State<ProjectCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Updated to use the actual image from your JSON
             ClipRRect(
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(20),
               ),
               child: AspectRatio(
                 aspectRatio: 16 / 9,
-                child: Container(
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Color(0xFFE2E8F0), Color(0xFFF8FAFC)],
-                      begin: Alignment.bottomLeft,
-                      end: Alignment.topRight,
-                    ),
-                  ),
+                child: Image.asset(
+                  widget.project.imageUrl,
                   width: double.infinity,
-                  child: Center(
-                    child: Icon(
-                      Icons.medical_services_outlined,
-                      size: 64,
-                      color: Colors.blueGrey.withValues(alpha: 0.3),
-                    ),
-                  ),
+                  fit: BoxFit.cover,
+                  // Fallback UI just in case the image hasn't been added yet
+                  errorBuilder: (context, error, stackTrace) {
+                    return Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [Color(0xFFE2E8F0), Color(0xFFF8FAFC)],
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.topRight,
+                        ),
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.image_not_supported_outlined,
+                          size: 48,
+                          color: Colors.blueGrey.withValues(alpha: 0.3),
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
