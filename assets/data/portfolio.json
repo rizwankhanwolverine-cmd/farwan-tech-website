@@ -1,0 +1,16 @@
+[
+  {
+    "id": "health_Right_01",
+    "title": "Health Right",
+    "category": "Healthcare Management",
+    "description": "A comprehensive management system designed specifically for hospitals and clinics to streamline administration, patient management, and daily medical operations.",
+    "techStack": [
+      "Flutter",
+      "Supabase",
+      "Dart"
+    ],
+    "imageUrl": "assets/images/health_right_mockup.png",
+    "infoUrl": "/products/health-right",
+    "loginUrl": "https://app.healthright.yourdomain.com/login"
+  }
+]
